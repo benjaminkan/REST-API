@@ -1,0 +1,13 @@
+{
+  "name": "rest-api",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.9"
+  }
+}
