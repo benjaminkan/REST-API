@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('pages'));
 
 // Connect to mongodb
-var uri = "mongodb://testuser:demopass@cluster0-shard-00-00-bzwgx.mongodb.net:27017,cluster0-shard-00-01-bzwgx.mongodb.net:27017,cluster0-shard-00-02-bzwgx.mongodb.net:27017/fifawc18?replicaSet=Cluster0-shard-0&ssl=true&authSource=admin";
+var uri = "mongodb://testuser:demopass@cluster0-shard-00-02-bzwgx.mongodb.net:27017/fifawc18?replicaSet=Cluster0-shard-0&ssl=true&authSource=admin";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const teams = mongoose.model(
